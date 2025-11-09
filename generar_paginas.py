@@ -3,7 +3,7 @@ import re
 import html
 
 # --- Configuración de rutas ---
-base_path = "ideas"  # Carpeta que contiene todas las carpetas de ideas
+base_path = "ideas"
 index_file = "index.html"
 indigenas_file = "indigenas_liwres_autonomos.html"
 links_list = []
@@ -13,7 +13,7 @@ def obtener_numero(carpeta):
     match = re.match(r"(\d+)", carpeta)
     return int(match.group(1)) if match else 9999
 
-# --- Cabecera HTML común para todas las páginas ---
+# --- Cabecera HTML común ---
 def generar_header(rel_path_to_root="."):
     index_rel = os.path.relpath(index_file, start=rel_path_to_root)
     indigenas_rel = os.path.relpath(indigenas_file, start=rel_path_to_root)
@@ -24,14 +24,12 @@ def generar_header(rel_path_to_root="."):
 </header>
 """
 
-# --- Generamos páginas individuales de cada idea ---
+# --- Generar páginas individuales de ideas ---
 for folder in sorted(os.listdir(base_path), key=obtener_numero):
     folder_path = os.path.join(base_path, folder)
     if not os.path.isdir(folder_path):
         continue
-
     try:
-        # Extraer nombre de la idea desde TXT
         txt_files = [f for f in os.listdir(folder_path) if f.lower().endswith(".txt")]
         if txt_files:
             txt_file = os.path.join(folder_path, txt_files[0])
@@ -42,7 +40,6 @@ for folder in sorted(os.listdir(base_path), key=obtener_numero):
 
         idea_name_html = html.escape(idea_name)
 
-        # Número y nombre sin número
         match = re.match(r"^(\d+)\s", idea_name)
         if match:
             numero = match.group(1)
@@ -51,10 +48,7 @@ for folder in sorted(os.listdir(base_path), key=obtener_numero):
             numero = str(obtener_numero(folder))
             nombre_sin_num = idea_name
 
-        # Lista de imágenes válidas
         images = sorted([f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".gif", ".jfif"))])
-
-        # Crear HTML de la idea
         header_html = generar_header(rel_path_to_root=folder_path)
         output_file = os.path.join(folder_path, f"{numero}.html")
         link_rel = os.path.relpath(output_file, start=os.path.dirname(index_file))
@@ -88,11 +82,8 @@ header {{
     font-weight: bold;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    box-sizing: border-box;
     text-transform: lowercase;
 }}
-header a {{ color: inherit; text-decoration: none; }}
-header a:hover {{ color: #007BFF; }}
 .content-wrapper {{
     padding: 80px 20px 20px 20px;
     text-align: center;
@@ -167,14 +158,8 @@ header {{
     font-weight: bold;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    box-sizing: border-box;
     text-transform: lowercase;
 }}
-header a {{
-    color: inherit;
-    text-decoration: none;
-}}
-header a:hover {{ color: #007BFF; }}
 .content-wrapper {{
     padding: 80px 20px 20px 20px;
     text-align: center;
@@ -206,10 +191,8 @@ hr {{
 {header_html_index}
 <div class="content-wrapper">
 """
-
 for num, link, name in sorted(links_list):
     index_content += f'<div class="div_link"><a class="divlink" href="{link}"><span class="numero">{num}</span> {html.escape(name)}</a></div>\n<hr>\n'
-
 index_content += "</div></body></html>"
 
 with open(index_file, "w", encoding="utf-8") as f:
@@ -218,6 +201,78 @@ with open(index_file, "w", encoding="utf-8") as f:
 # --- Página indígenas ---
 header_html_indigenas = generar_header(rel_path_to_root=os.path.dirname(indigenas_file))
 imagen_indi_path = os.path.relpath(os.path.join(base_path, "indi.png"), start=os.path.dirname(indigenas_file))
+
+# --- Texto y estructura formateada ---
+texto_intro = """
+<div style="font-weight:bold; text-align:left; margin-bottom:25px;">
+hola soy sergio sebastian costilla les explico que mi intención fue y es decirles propaganda de gente que verdaderamente trabaja y de personas que quieren progresar
+si no le interesa no le preste atención pero si hay gente que si trabaja de enserio y hay personas que si quieren progresar les explico que yo sergio sebastian costilla vuelvo a insistir desde el año 2015 que si yo beneficie a progresar ya puede venir personalmente a mi dirección ernesto renan 75 parque san martin libertad merlo gran buenos aires argentina y dejar personalmente las ayudas con lo que puedan
+</div>
+"""
+
+texto_bajo_imagen = """
+<div style="text-align: justify; margin-top:30px;">
+Les explico que debo emigrar a alguna provincia del norte bastante más tropical que buenos aires si alguna en carácter de soltera ya sin más nada me quiere y me lo propone me yeva a su provincia a vivir con eya totalmente valerosa sigo estando sólo soltero de rehén usado sin piedad porque nosotros estamos bajo dominio de agentes extranjeros que ya tienen re planeado qué hacer con la argentina sí ó sí nos roban la Patagonia y la Antártida a los habitantes de Latinoamérica a los indígenas musulmanes somos los verdaderos habitantes de américa los primeros de la aldea de américa nos re extinguieron les había explicado que necesitábamos elegir vuelos serios directos legales de gente de mujeres de otros países que no nos exterminen con mentiras y que vengan a vivir con Latinoamérica legalmente continuándonos no extinguiéndonos sin nada para que después venga otra gente externa si me quiere me lo dice y me yeva con eya a alguna provincia más tropical tipo misiones formosa chaco santiago del estero tucumán ya no tenemos más nada que perder se aprovecharon fácilmente de los verdaderos habitantes de Latinoamérica estábamos re indefensos y los ingenieros sociales no tuvieron piedad en extinguirnos dejar sólo blancas y blancos y después también vienen los chocolates está todo similar
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+telegram +5491121580085<br>
+whatsapp +5491121580085<br>
+bestgram +5491121580085<br><br>
+
+telegram +5491171861787<br>
+whatsapp +5491171861787<br>
+bestgram +5491171861787<br><br>
+
+telegram +5491157443546<br>
+whatsapp +5491157443546<br>
+bestgram +5491157443546<br><br>
+
+telegram +5491127940172<br>
+whatsapp +5491127940172<br>
+bestgram +5491127940172<br><br>
+
++5491140578963<br>
++5491168378538
+</div>
+
+<div style="text-align:right; margin-top:40px; font-weight:bold;">
+banco de la nación argentina<br>
+números de caja de ahorros 24320503124751<br>
+números de cbu 0110050130005031247515<br>
+alias 2042rescateargentina<br><br>
+
+banco brubank<br>
+números de caja de ahorros 0002100310964600001<br>
+números de cbu 1430001713031096460016<br><br>
+
+banco de la nación argentina<br>
+números de caja de ahorros 32450402165925<br>
+números de cbu 011004230004021659251<br>
+alias amishceltaargentina<br><br>
+
+banco provincia<br>
+números de caja de ahorros 50476071651<br>
+números de cbu 0140117803504760716511<br><br>
+
+banco Patagonia<br>
+números de caja de ahorros CA $ 047-470007480-000<br>
+números de cbu 0340047008470007480002<br>
+alias 179mislatmusind
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+indigenas1liores8autonomos@gmail.com<br>
+stellamarisbarrios2022@gmail.com<br>
+mega1hospital8privado@gmail.com<br>
+industria32nasional@yahoo.com<br>
+lat100miltempestad179@yahoo.com<br>
+civ1abo8ame9aut@gmail.com<br>
+ser1920empresario@gmail.com<br>
+metrobus1rivadavia8bdlna@yahoo.com<br>
+sergio1sebastian7costilla@tuta.io
+</div>
+"""
 
 indigenas_content = f"""<!DOCTYPE html>
 <html lang="es">
@@ -247,13 +302,10 @@ header {{
     font-weight: bold;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    box-sizing: border-box;
     text-transform: lowercase;
 }}
-header a {{ color: inherit; text-decoration: none; }}
-header a:hover {{ color: #007BFF; }}
 .content-wrapper {{
-    padding: 80px 20px 20px 20px;
+    padding: 80px 20px 40px 20px;
 }}
 h1 {{
     font-size: 28px;
@@ -263,34 +315,22 @@ h1 {{
     text-align: center;
     text-transform: lowercase;
 }}
-.intro {{
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 20px;
-}}
 .img_indi {{
     display: block;
     margin: 20px auto;
     max-width: 400px;
     height: auto;
-    object-fit: contain;
     border-radius: 8px;
 }}
 </style>
 </head>
 <body>
 {header_html_indigenas}
-
 <div class="content-wrapper">
 <h1>indígenas liwres autónomos</h1>
-
-<div class="intro">
-hola soy sergio sebastian costilla les explico que mi intención fue y es decirles propaganda de gente que verdaderamente trabaja y de personas que quieren progresar
-si no le interesa no le preste atención pero si hay gente que si trabaja de enserio y hay personas que si quieren progresar les explico que yo sergio sebastian costilla vuelvo a insistir desde el año 2015 que si yo beneficie a progresar ya puede venir personalmente a mi dirección ernesto renan 75 parque san martin libertad merlo gran buenos aires argentina y dejar personalmente las ayudas con lo que puedan
-</div>
-
+{texto_intro}
 <img src="{imagen_indi_path}" alt="Indígenas" class="img_indi">
-
+{texto_bajo_imagen}
 </div>
 </body>
 </html>
@@ -299,6 +339,4 @@ si no le interesa no le preste atención pero si hay gente que si trabaja de ens
 with open(indigenas_file, "w", encoding="utf-8") as f:
     f.write(indigenas_content)
 
-print(f"Index actualizado: {index_file}")
-print(f"Páginas de ideas creadas con galería organizada y tamaño fijo")
-print(f"Página de indígenas creada SIN datos personales, con imagen centrada y texto explicativo: {indigenas_file}")
+print(f"✅ Página indígenas creada correctamente con imagen centrada, texto en negrita arriba, y secciones alineadas.")
