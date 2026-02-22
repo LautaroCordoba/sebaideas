@@ -216,24 +216,10 @@ Les explico que debo emigrar a alguna provincia del norte bastante más tropical
 </div>
 
 <div style="text-align:center; margin-top:30px;">
-telegram +5491121580085<br>
-whatsapp +5491121580085<br>
-bestgram +5491121580085<br><br>
-
-telegram +5491171861787<br>
-whatsapp +5491171861787<br>
-bestgram +5491171861787<br><br>
-
-telegram +5491157443546<br>
-whatsapp +5491157443546<br>
-bestgram +5491157443546<br><br>
-
-telegram +5491127940172<br>
-whatsapp +5491127940172<br>
-bestgram +5491127940172<br><br>
-
-+5491140578963<br>
-+5491168378538
+telegram +5491132459319<br>
+whatsapp +5491132459319<br>
+signal +5491132459319<br>
+bestgram +5491132459319<br><br>
 </div>
 
 <div style="text-align:right; margin-top:40px; font-weight:bold;">
@@ -262,15 +248,25 @@ alias 179mislatmusind
 </div>
 
 <div style="text-align:center; margin-top:40px;">
+vender8ensenanza8de8troposfera@gmail.com<br>
 indigenas1liores8autonomos@gmail.com<br>
-stellamarisbarrios2022@gmail.com<br>
 mega1hospital8privado@gmail.com<br>
+kiarita12feb2025@gmail.com<br>
+stellamarisbarrios2022@gmail.com<br>
 industria32nasional@yahoo.com<br>
-lat100miltempestad179@yahoo.com<br>
-civ1abo8ame9aut@gmail.com<br>
-ser1920empresario@gmail.com<br>
+abahasmexgobmusulmana@aol.com<br>
+sergio1sebastian7costilla@tuta.io<br>
+censo19831917venconmigo@gmail.com<br>
+remaricasmeusansiempre@yahoo.com<br>
+a1700f18degranbretana@yahoo.com<br>
+no_me_uses_mas_rescaten@yahoo.com<br>
+100milas190@gmail.com<br>
+vie8isr8cor8eur8jap8leg8en8ar@gmail.com<br>
+100.000mirage2000@gmail.com<br>
+s189.000me32@gmail.com<br>
+lablanquitaperfecta@gmail.com<br>
 metrobus1rivadavia8bdlna@yahoo.com<br>
-sergio1sebastian7costilla@tuta.io
+lat100miltempestad179@yahoo.com
 </div>
 """
 
