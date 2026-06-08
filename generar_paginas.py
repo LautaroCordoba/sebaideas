@@ -216,57 +216,49 @@ Les explico que debo emigrar a alguna provincia del norte bastante más tropical
 </div>
 
 <div style="text-align:center; margin-top:30px;">
-telegram +5491132459319<br>
-whatsapp +5491132459319<br>
-signal +5491132459319<br>
-bestgram +5491132459319<br><br>
+Whatsapp +5491132506825<br>
+Whatsapp +5491176224619<br><br>
 </div>
 
 <div style="text-align:right; margin-top:40px; font-weight:bold;">
-banco de la nación argentina<br>
-números de caja de ahorros 24320503124751<br>
-números de cbu 0110050130005031247515<br>
-alias 2042rescateargentina<br><br>
+Banco de la nación argentina<br>
+Sergio Sebastián Costilla<br><br>
 
-banco brubank<br>
-números de caja de ahorros 0002100310964600001<br>
-números de cbu 1430001713031096460016<br><br>
+alias sribvapakmasislasesl<br>
+CBU: 0110622630062222926947<br>
+CA $ 20456222292694<br>
 
-banco de la nación argentina<br>
-números de caja de ahorros 32450402165925<br>
-números de cbu 011004230004021659251<br>
-alias amishceltaargentina<br><br>
+alias venatlantisbasnuelat<br>
+CBU: 0110050130005031247515<br>
+CA $ 24320503124751<br><br>
 
-banco provincia<br>
-números de caja de ahorros 50476071651<br>
-números de cbu 0140117803504760716511<br><br>
-
-banco Patagonia<br>
-números de caja de ahorros CA $ 047-470007480-000<br>
-números de cbu 0340047008470007480002<br>
-alias 179mislatmusind
+alias viecoreurpobisrjap<br>
+CBU: 0110040230004021659251<br>
+CA $ 32450402165925
 </div>
 
 <div style="text-align:center; margin-top:40px;">
-vender8ensenanza8de8troposfera@gmail.com<br>
-indigenas1liores8autonomos@gmail.com<br>
-mega1hospital8privado@gmail.com<br>
-kiarita12feb2025@gmail.com<br>
-stellamarisbarrios2022@gmail.com<br>
-industria32nasional@yahoo.com<br>
 abahasmexgobmusulmana@aol.com<br>
-sergio1sebastian7costilla@tuta.io<br>
+stellamarisbarrios2022@gmail.com<br>
+noviaborigenesdeargentina@gmail.com<br>
+que1tarados1son1re1lindas@gmail.com<br>
 censo19831917venconmigo@gmail.com<br>
-remaricasmeusansiempre@yahoo.com<br>
-a1700f18degranbretana@yahoo.com<br>
-no_me_uses_mas_rescaten@yahoo.com<br>
+indigenas1liores8autonomos@gmail.com<br>
+mis17pesosarghasta320.000@hotmail.com<br>
+arriba1delas7tormentas@outlook.com<br>
+empire-earth-en-una-isla@hotmail.com<br>
+vie-cor-jap-van-isr-sri-lanka-pak@hotmail.com<br>
+somos1sistema7dubai@hotmail.com<br>
+el1ultimo7de1la9calsa@hotmail.com<br>
+re-envidia-tengo-mis-19@protonmail.com<br>
+mega1hospital8privado@gmail.com<br>
+nmingenilegalesinfinitamente@yahoo.com<br>
+civ1abo8ame9aut@gmail.com<br>
 100milas190@gmail.com<br>
-vie8isr8cor8eur8jap8leg8en8ar@gmail.com<br>
-100.000mirage2000@gmail.com<br>
-s189.000me32@gmail.com<br>
-lablanquitaperfecta@gmail.com<br>
-metrobus1rivadavia8bdlna@yahoo.com<br>
-lat100miltempestad179@yahoo.com
+sergio1sebastian7costilla@tuta.io<br>
+ven-conmigo-a-la-tropical@protonmail.me<br>
+lat100miltempestad179@yahoo.com<br>
+fric1bril1tin1kzkhtn1utrli1cnd@gmail.com
 </div>
 """
 
